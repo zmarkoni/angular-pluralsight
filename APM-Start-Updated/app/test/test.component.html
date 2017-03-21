@@ -1,0 +1,19 @@
+<div class="panel panel-primary">
+
+    <div class="panel-heading">
+        <h1>{{getTitle()}}</h1>
+    </div>
+
+    <div class="panel-body">
+
+        <h2 innerText={{testSubtitle}}></h2>
+
+        <br/>
+
+        <button class='btn btn-primary' (click)='toggleUser()' >
+            {{showUser ? 'Hide' : 'Show'}} user
+        </button>
+
+        <h3 *ngIf="showUser">My name is: {{testName}} {{testSurname}}</h3>
+    </div>
+</div>
